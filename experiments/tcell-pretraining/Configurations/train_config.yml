@@ -1,0 +1,26 @@
+data:
+  root: ~/data/t-cell
+device: cuda:0
+git_rev: none
+model:
+  kwargs:
+    activation: relu
+    dims:
+    - 4999
+    - 2048
+    - 256
+    - 32
+    - 2
+    dropout: 0.0
+  name: AE
+optimizer:
+  kwargs:
+    lr: 0.0002
+  name: Adam
+random_seed : 27343
+tensorboard:
+  log_scalars_every: 10
+training:
+  batch_size: 256
+  checkpoint_every: 50
+  num_epochs: 600

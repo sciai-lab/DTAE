@@ -1,0 +1,19 @@
+K: 50
+checkpoint:
+  experiment: dentate-gyrus-pretraining
+  iteration: 28500
+data:
+  root: ~/data/dentate_gyrus
+device: cuda:0
+git_rev: none
+optimizer:
+  kwargs:
+    lr: 0.01
+  name: Adam
+tensorboard:
+  log_scalars_every: 1
+training:
+  checkpoint_every: 50
+  num_epochs: 200
+weight_cosine: 10
+weight_push_pull: 1

@@ -1,0 +1,21 @@
+K: 50
+checkpoint:
+  experiment: phate-gen-pretraining
+  iteration: 6000
+data:
+  root: ./data
+device: cuda:0
+git_rev: none
+optimizer:
+  kwargs:
+    lr: 0.01
+  name: Adam
+random_seed: 500
+tensorboard:
+  log_scalars_every: 1
+training:
+  batch_size: 256
+  checkpoint_every: 50
+  num_epochs: 150
+weight_cosine: 15
+weight_push_pull: 1

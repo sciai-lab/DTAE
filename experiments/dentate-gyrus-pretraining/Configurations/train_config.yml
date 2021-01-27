@@ -1,0 +1,25 @@
+data:
+  root: ~/data/dentate_gyrus
+device: cuda:0
+git_rev: none
+model:
+  kwargs:
+    activation: relu
+    dims:
+    - 2999
+    - 512
+    - 64
+    - 2
+    dropout: 0.0
+  name: AE
+optimizer:
+  kwargs:
+    lr: 0.0002
+  name: Adam
+tensorboard:
+  log_scalars_every: 10
+training:
+  batch_size: 256
+  checkpoint_every: 50
+  num_epochs: 300
+

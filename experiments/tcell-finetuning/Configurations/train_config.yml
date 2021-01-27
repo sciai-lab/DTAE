@@ -1,0 +1,23 @@
+K: 50
+checkpoint:
+  experiment: tcell-pretraining
+  iteration: 45000
+data:
+  root: ~/data/t-cell
+dataset:
+  n_branches: 10
+  n_dim: 100
+device: cuda:0
+git_rev: none
+optimizer:
+  kwargs:
+    lr: 0.001
+  name: Adam
+random_seed : 27343
+tensorboard:
+  log_scalars_every: 1
+training:
+  checkpoint_every: 50
+  num_epochs: 250
+weight_cosine: 15
+weight_push_pull: 1
